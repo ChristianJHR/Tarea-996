@@ -1,72 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Tarea 996 - Virtualización</title>
-<style>
-body{
-font-family:Arial,sans-serif;
-max-width:900px;
-margin:auto;
-padding:20px;
-}
-.slide{
-border:1px solid #ccc;
-padding:20px;
-margin:20px 0;
-}
-h1{
-color:#2c3e50;
-}
-</style>
+    <meta charset="utf-8">
+    <title>Tarea 996</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/white.css">
 </head>
 <body>
 
-<div class="slide">
-<h1>Tarea #996</h1>
-<h2>Solución Estratificada de Problemas en TIC</h2>
-<p>Christian Hernández</p>
+<div class="reveal">
+    <div class="slides">
+
+        <section>
+            <h1>Tarea #996</h1>
+            <h3>Solución Estratificada de Problemas en TIC</h3>
+        </section>
+
+        <section>
+            <h2>Solución Estratificada de Problemas en TIC</h2>
+            <p>División de sistemas en capas para facilitar su administración y resolución de problemas.</p>
+        </section>
+
+        <section>
+            <h2>Virtualización por Interpretación Pura</h2>
+            <ul>
+                <li>Interpreta instrucciones una por una.</li>
+                <li>Alta compatibilidad.</li>
+                <li>Menor rendimiento.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Virtualización por Recompilación Dinámica</h2>
+            <ul>
+                <li>Traduce bloques completos.</li>
+                <li>Mayor velocidad.</li>
+                <li>Optimización automática.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Virtualización por Hipervisión (Bare Metal)</h2>
+            <ul>
+                <li>Se ejecuta directamente sobre el hardware.</li>
+                <li>Máximo rendimiento.</li>
+                <li>Ejemplos: VMware ESXi, Hyper-V.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conclusiones</h2>
+            <p>Cada técnica tiene ventajas según el entorno donde se utilice.</p>
+        </section>
+
+    </div>
 </div>
 
-<div class="slide">
-<h1>Solución Estratificada de Problemas en TIC</h1>
-<p>Divide un sistema en capas para facilitar la administración y resolución de problemas.</p>
-</div>
-
-<div class="slide">
-<h1>Virtualización por Interpretación Pura</h1>
-<p>Interpreta cada instrucción de la máquina virtual antes de ejecutarla.</p>
-<ul>
-<li>Alta compatibilidad</li>
-<li>Menor rendimiento</li>
-<li>Ejemplo: Bochs</li>
-</ul>
-</div>
-
-<div class="slide">
-<h1>Virtualización por Recompilación Dinámica</h1>
-<p>Traduce bloques de instrucciones para mejorar la velocidad.</p>
-<ul>
-<li>Mayor rendimiento</li>
-<li>Optimización automática</li>
-<li>Ejemplo: QEMU</li>
-</ul>
-</div>
-
-<div class="slide">
-<h1>Virtualización por Hipervisión (Bare Metal)</h1>
-<p>El hipervisor se instala directamente sobre el hardware.</p>
-<ul>
-<li>Alto rendimiento</li>
-<li>Mayor seguridad</li>
-<li>Ejemplos: VMware ESXi, Hyper-V</li>
-</ul>
-</div>
-
-<div class="slide">
-<h1>Conclusiones</h1>
-<p>Cada método tiene ventajas según el entorno donde se utilice.</p>
-</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script>
+Reveal.initialize();
+</script>
 
 </body>
 </html>
