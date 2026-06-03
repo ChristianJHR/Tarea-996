@@ -1,272 +1,301 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <title>Tarea #996 - Virtualización</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/white.css">
+<title>Tarea #996</title>
 
-    <style>
-        .reveal h1, .reveal h2 {
-            color: #2c3e50;
-        }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/black.min.css">
 
-        .reveal ul {
-            display: inline-block;
-            text-align: left;
-        }
+<style>
 
-        .reveal table {
-            margin: auto;
-            font-size: 0.8em;
-        }
-    </style>
+:root{
+--cyan:#00f5d4;
+--purple:#7c3aed;
+--orange:#f59e0b;
+--panel:#111827;
+--text:#e2e8f0;
+--muted:#64748b;
+}
+
+.reveal{
+color:var(--text);
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3{
+color:var(--cyan);
+}
+
+.cover{
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+background:var(--purple);
+padding:8px 16px;
+border-radius:5px;
+margin-bottom:20px;
+}
+
+.nav-hint{
+margin-top:30px;
+color:var(--muted);
+}
+
+.sec-cover{
+text-align:center;
+}
+
+.num{
+font-size:6rem;
+font-weight:bold;
+opacity:.15;
+color:var(--cyan);
+}
+
+.card{
+background:var(--panel);
+padding:15px;
+margin:10px 0;
+border-radius:10px;
+border:1px solid rgba(0,245,212,.2);
+}
+
+.use-case{
+background:var(--panel);
+padding:15px;
+margin:10px 0;
+border-radius:10px;
+border-left:4px solid var(--orange);
+}
+
+.uc-title{
+color:var(--orange);
+font-weight:bold;
+margin-bottom:8px;
+}
+
+.slide-label{
+position:absolute;
+bottom:10px;
+right:20px;
+font-size:.7rem;
+color:var(--muted);
+}
+
+.v-hint{
+margin-top:20px;
+color:var(--muted);
+}
+
+.arrow{
+color:var(--cyan);
+font-weight:bold;
+}
+
+</style>
+
 </head>
+
 <body>
 
 <div class="reveal">
 <div class="slides">
 
+<!-- ========================= -->
+<!-- PORTADA -->
+<!-- ========================= -->
+
+<section class="cover">
+
+<div class="badge">
+TAREA #996 · TIC
+</div>
+
+<h1>
+Solución Estratificada<br>
+de Problemas en TIC
+</h1>
+
+<p>
+Virtualización por Interpretación Pura,
+Recompilación Dinámica e Hipervisión Bare Metal
+</p>
+
+<p>
+Christian Hernández
+</p>
+
+<p>
+3 de junio de 2026
+</p>
+
+<div class="nav-hint">
+→ Temas principales | ↓ Más información
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- TEMA 1 -->
+<!-- ========================= -->
+
 <section>
-    <h1>Tarea #996</h1>
-    <h2>Solución Estratificada de Problemas en TIC</h2>
-    <p><strong>Nombre:</strong> Christian Hernández</p>
-    <p><strong>Materia:</strong> TIC</p>
-    <p><strong>Fecha:</strong> 3 de junio de 2026</p>
+
+<section class="sec-cover">
+
+<div class="num">1.1</div>
+
+<h2>
+Solución Estratificada de Problemas en TIC
+</h2>
+
+<p>
+Organización de sistemas mediante capas.
+</p>
+
+<div class="v-hint">
+<span class="arrow">↓</span>
+Descripción · Características · Casos de uso
+</div>
+
 </section>
 
 <section>
-    <h2>Solución Estratificada de Problemas en TIC</h2>
 
-    <h3>Descripción</h3>
-    <p>
-        La solución estratificada consiste en dividir un sistema tecnológico
-        en diferentes capas o niveles para facilitar su diseño,
-        administración, mantenimiento y resolución de problemas.
-    </p>
+<h2>Descripción</h2>
+
+<div class="card">
+<p>
+La solución estratificada consiste en dividir
+un sistema tecnológico en diferentes capas o niveles
+para facilitar su diseño, administración,
+mantenimiento y resolución de problemas.
+</p>
+</div>
+
+<span class="slide-label">
+1.1 · Descripción
+</span>
+
 </section>
 
 <section>
-    <h2>Solución Estratificada de Problemas en TIC</h2>
 
-    <h3>Características</h3>
-    <ul>
-        <li>Organización por capas.</li>
-        <li>Facilita la detección de fallas.</li>
-        <li>Reduce la complejidad.</li>
-        <li>Permite escalabilidad.</li>
-        <li>Mejora la administración de recursos.</li>
-    </ul>
+<h2>Características</h2>
+
+<div class="card">
+✔ Organización por capas.
+</div>
+
+<div class="card">
+✔ Facilita la detección de fallas.
+</div>
+
+<div class="card">
+✔ Reduce la complejidad.
+</div>
+
+<div class="card">
+✔ Permite escalabilidad.
+</div>
+
+<div class="card">
+✔ Mejora la administración de recursos.
+</div>
+
+<span class="slide-label">
+1.1 · Características
+</span>
+
 </section>
 
 <section>
-    <h2>Solución Estratificada de Problemas en TIC</h2>
 
-    <h3>Casos de uso</h3>
-    <ul>
-        <li>Redes de computadoras.</li>
-        <li>Sistemas operativos.</li>
-        <li>Servicios en la nube.</li>
-        <li>Centros de datos.</li>
-    </ul>
+<h2>Casos de uso</h2>
+
+<div class="use-case">
+<div class="uc-title">
+🌐 Redes de computadoras
+</div>
+Modelos OSI y TCP/IP.
+</div>
+
+<div class="use-case">
+<div class="uc-title">
+💻 Sistemas operativos
+</div>
+Organización interna del sistema.
+</div>
+
+<div class="use-case">
+<div class="uc-title">
+☁ Servicios en la nube
+</div>
+Infraestructura, plataforma y software.
+</div>
+
+<div class="use-case">
+<div class="uc-title">
+🏢 Centros de datos
+</div>
+Administración eficiente de recursos.
+</div>
+
+<span class="slide-label">
+1.1 · Casos de uso
+</span>
+
 </section>
 
-<section>
-    <h2>Virtualización por Interpretación Pura</h2>
-
-    <h3>Descripción</h3>
-    <p>
-        La interpretación pura ejecuta las instrucciones de una máquina virtual
-        interpretándolas una por una y traduciéndolas para el hardware real.
-    </p>
 </section>
 
-<section>
-    <h2>Virtualización por Interpretación Pura</h2>
+<!-- ========================= -->
+<!-- TEMA 2 -->
+<!-- ========================= -->
 
-    <h3>Características</h3>
-    <ul>
-        <li>Alta compatibilidad.</li>
-        <li>Fácil implementación.</li>
-        <li>Puede ejecutar sistemas de distintas arquitecturas.</li>
-        <li>Menor rendimiento.</li>
-    </ul>
+<section>
+
+<section class="sec-cover">
+
+<div class="num">1.1.a</div>
+
+<h2>
+Virtualización por<br>
+Interpretación Pura
+</h2>
+
+<p>
+Pure Interpretation
+</p>
+
+<div class="v-hint">
+<span class="arrow">↓</span>
+Descripción · Características · Casos de uso · Ejemplos
+</div>
+
 </section>
 
-<section>
-    <h2>Virtualización por Interpretación Pura</h2>
-
-    <h3>Casos de uso</h3>
-    <ul>
-        <li>Emulación de computadoras antiguas.</li>
-        <li>Investigación y pruebas.</li>
-        <li>Desarrollo de software.</li>
-    </ul>
-
-    <h3>Ejemplos</h3>
-    <ul>
-        <li>Bochs</li>
-        <li>QEMU (modo de emulación completa)</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Virtualización por Interpretación Pura</h2>
-
-    <h3>Ventajas</h3>
-    <ul>
-        <li>Compatible con diferentes arquitecturas.</li>
-        <li>Gran flexibilidad.</li>
-        <li>Útil para sistemas antiguos.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Virtualización por Interpretación Pura</h2>
-
-    <h3>Desventajas</h3>
-    <ul>
-        <li>Ejecución lenta.</li>
-        <li>Mayor consumo de recursos.</li>
-        <li>Menor eficiencia que otros métodos.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Virtualización por Recompilación Dinámica</h2>
-
-    <h3>Descripción</h3>
-    <p>
-        La recompilación dinámica traduce bloques completos de instrucciones
-        del sistema invitado y los optimiza para ejecutarlos más rápido
-        en el sistema anfitrión.
-    </p>
-</section>
-
-<section>
-    <h2>Virtualización por Recompilación Dinámica</h2>
-
-    <h3>Características</h3>
-    <ul>
-        <li>Mayor velocidad que la interpretación pura.</li>
-        <li>Traducción en tiempo real.</li>
-        <li>Optimización automática de instrucciones.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Virtualización por Recompilación Dinámica</h2>
-
-    <h3>Casos de uso</h3>
-    <ul>
-        <li>Máquinas virtuales modernas.</li>
-        <li>Compatibilidad entre arquitecturas diferentes.</li>
-    </ul>
-
-    <h3>Ejemplos</h3>
-    <ul>
-        <li>QEMU con traducción dinámica.</li>
-        <li>Rosetta 2 de Apple.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Virtualización por Hipervisión (Bare Metal)</h2>
-
-    <h3>Descripción</h3>
-    <p>
-        El hipervisor se instala directamente sobre el hardware físico
-        sin necesidad de un sistema operativo anfitrión.
-    </p>
-</section>
-
-<section>
-    <h2>Virtualización por Hipervisión (Bare Metal)</h2>
-
-    <h3>Características</h3>
-    <ul>
-        <li>Alto rendimiento.</li>
-        <li>Mejor aprovechamiento de recursos.</li>
-        <li>Mayor seguridad.</li>
-        <li>Administración centralizada.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Virtualización por Hipervisión (Bare Metal)</h2>
-
-    <h3>Casos de uso</h3>
-    <ul>
-        <li>Centros de datos.</li>
-        <li>Cloud Computing.</li>
-        <li>Infraestructura empresarial.</li>
-    </ul>
-
-    <h3>Ejemplos</h3>
-    <ul>
-        <li>VMware ESXi</li>
-        <li>Microsoft Hyper-V</li>
-        <li>Xen</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Comparación de Tecnologías</h2>
-
-    <table border="1">
-        <tr>
-            <th>Tecnología</th>
-            <th>Rendimiento</th>
-            <th>Compatibilidad</th>
-            <th>Uso Principal</th>
-        </tr>
-        <tr>
-            <td>Interpretación Pura</td>
-            <td>Bajo</td>
-            <td>Muy Alta</td>
-            <td>Emulación</td>
-        </tr>
-        <tr>
-            <td>Recompilación Dinámica</td>
-            <td>Medio-Alto</td>
-            <td>Alta</td>
-            <td>Compatibilidad</td>
-        </tr>
-        <tr>
-            <td>Hipervisión Bare Metal</td>
-            <td>Muy Alto</td>
-            <td>Media</td>
-            <td>Servidores y nube</td>
-        </tr>
-    </table>
-</section>
-
-<section>
-    <h2>Conclusiones</h2>
-
-    <ul>
-        <li>La virtualización permite optimizar el uso del hardware.</li>
-        <li>Cada técnica tiene ventajas específicas según la necesidad.</li>
-        <li>La interpretación pura ofrece compatibilidad.</li>
-        <li>La recompilación dinámica mejora el rendimiento.</li>
-        <li>Los hipervisores bare metal son la solución más utilizada en entornos empresariales y servicios en la nube.</li>
-    </ul>
-
-    <h3>¡Gracias por su atención!</h3>
 </section>
 
 </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
+
 <script>
 Reveal.initialize({
-    hash: true,
-    slideNumber: true,
-    width: 1280,
-    height: 720,
-    margin: 0.08
+hash:true,
+slideNumber:true,
+controls:true,
+progress:true,
+center:false,
+transition:"slide"
 });
 </script>
 
