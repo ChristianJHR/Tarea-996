@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tarea #996</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/black.min.css">
+
+<style>
+
+:root{
+--cyan:#00f5d4;
+--purple:#7c3aed;
+--orange:#f59e0b;
+--panel:#111827;
+--text:#e2e8f0;
+--muted:#64748b;
+}
+
+.reveal{
+color:var(--text);
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3{
+color:var(--cyan);
+}
+
+.cover{
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+background:var(--purple);
+padding:8px 16px;
+border-radius:5px;
+margin-bottom:20px;
+}
+
+.nav-hint{
+margin-top:30px;
+color:var(--muted);
+}
+
+.sec-cover{
+text-align:center;
+}
+
+.num{
+font-size:6rem;
+font-weight:bold;
+opacity:.15;
+color:var(--cyan);
+}
+
+.card{
+background:var(--panel);
+padding:15px;
+margin:10px 0;
+border-radius:10px;
+border:1px solid rgba(0,245,212,.2);
+}
+
+.use-case{
+  background: #071633;
+  border-left: 3px solid #f59e0b;
+  border-radius: 6px;
+
+  padding: 8px 15px;
+  margin: 10px 0;
+}
+
+.uc-title{
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #f59e0b;
+  margin-bottom: 2px;
+}
+
+.use-case p{
+  font-size: 0.7em;
+  margin: 0;
+}
+
+.uc-title{
+color:var(--orange);
+font-weight:bold;
+margin-bottom:8px;
+}
+
+.slide-label{
+position:absolute;
+bottom:10px;
+right:20px;
+font-size:.7rem;
+color:var(--muted);
+}
+
+.v-hint{
+margin-top:20px;
+color:var(--muted);
+}
+
+.arrow{
+color:var(--cyan);
+font-weight:bold;
+}
+
+.compare-table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+font-size:.85em;
+}
+
+.compare-table th{
+background:rgba(0,245,212,.15);
+color:#00f5d4;
+padding:12px;
+text-align:left;
+}
+
+.compare-table td{
+padding:12px;
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.compare-table tr:hover{
+background:rgba(0,245,212,.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+<!-- ========================= -->
+<!-- PORTADA -->
+<!-- ========================= -->
+
+<section class="cover">
+
+<div class="badge">
+TAREA #996
+</div>
+
+<h2>
+Solución Estratificada de Problemas en TIC
+</h2>
+
+<p>
+Asignatura: Procesamiento de Datos en la Nube
+</p>
+
+<p>
+Christian De Jesus Hernández Ruiz - 210300546
+</p>
+
+<p>
+Ingenieria en Datos e Inteligencia Organizacional
+</p>
+
+<p>
+3 de Junio de 2026
+</p>
+
+<div class="nav-hint">
+→ Temas principales | ↓ Más información
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- TEMA 1 -->
+<!-- ========================= -->
+
+<section>
+
+<section class="sec-cover">
+
+<div class="num">1.1</div>
+
+<h2>
+Solución Estratificada de Problemas en TIC
+</h2>
+
+<p>
+Organización de sistemas mediante capas.
+</p>
+
+<div class="v-hint">
+<span class="arrow">↓</span>
+Descripción · Características · Casos de uso
+</div>
+
+</section>
+
+<section>
+
+<h2>Descripción</h2>
+
+<div class="card">
+<p>
+La solución estratificada consiste en dividir
+un sistema tecnológico en diferentes capas o niveles
+para facilitar su diseño, administración,
+mantenimiento y resolución de problemas.
+</p>
+</div>
+
+
+</section>
+
+<section>
+
+<h2>Características</h2>
+
+<div class="card">
+Organización por capas.
+</div>
+
+<div class="card">
+Facilita la detección de fallas.
+</div>
+
+<div class="card">
+Reduce la complejidad.
+</div>
+
+<div class="card">
+Permite escalabilidad.
+</div>
+
+<div class="card">
+Mejora la administración de recursos.
+</div>
+
+
+</section>
+
+<section>
+
+<h2>Casos de uso</h2>
+
+<div class="use-case">
+<div class="uc-title">
+🌐 Redes de computadoras
+</div>
+Modelos OSI y TCP/IP.
+</div>
+
+<div class="use-case">
+<div class="uc-title">
+💻 Sistemas operativos
+</div>
+Organización interna del sistema.
+</div>
+
+<div class="use-case">
+<div class="uc-title">
+☁ Servicios en la nube
+</div>
+Infraestructura, plataforma y software.
+</div>
+
+<div class="use-case">
+<div class="uc-title">
+🏢 Centros de datos
+</div>
+Administración eficiente de recursos.
+</div>
+
+</section>
+
+</section>
+
+<!-- ========================= -->
+<!-- TEMA 2 -->
+<!-- INTERPRETACIÓN PURA -->
+<!-- ========================= -->
+
+<section>
+
+<section class="sec-cover">
+
+<div class="num">1.1.a</div>
+
+<h2>
+Virtualización por Interpretación Pura
+</h2>
+
+<p>
+Ejecución mediante interpretación instrucción por instrucción.
+</p>
+
+<div class="v-hint">
+<span class="arrow">↓</span>
+Descripción · Características · Casos de uso · Ejemplos · Ventajas · Desventajas
+</div>
+
+</section>
+
+<section>
+
+<h2>Descripción</h2>
+
+<div class="card">
+<p>
+La interpretación pura ejecuta las instrucciones de una máquina
+virtual interpretándolas una por una y traduciéndolas para el
+hardware real.
+</p>
+</div>
+
+</section>
+
+<section>
+
+<h2>Características</h2>
+
+<div class="card">Alta compatibilidad.</div>
+
+<div class="card">Fácil implementación.</div>
+
+<div class="card">Puede ejecutar sistemas de distintas arquitecturas.</div>
+
+<div class="card">Menor rendimiento.</div>
+
+</section>
+
+<section>
+
+<h2>Casos de uso</h2>
+
+<div class="use-case">
+<div class="uc-title">🖥 Emulación de computadoras antiguas</div>
+Permite ejecutar sistemas obsoletos en hardware moderno.
+</div>
+
+<div class="use-case">
+<div class="uc-title">🔬 Investigación y pruebas</div>
+Ideal para laboratorios y entornos de prueba.
+</div>
+
+<div class="use-case">
+<div class="uc-title">💻 Desarrollo de software</div>
+Pruebas de compatibilidad entre plataformas.
+</div>
+
+</section>
+
+<section>
+
+<h2>Ejemplos</h2>
+
+<div class="card">Bochs</div>
+
+<div class="card">QEMU (modo de emulación completa)</div>
+
+</section>
+
+<section>
+
+<h2>Ventajas</h2>
+
+<div class="card">Compatible con diferentes arquitecturas.</div>
+
+<div class="card">Gran flexibilidad.</div>
+
+<div class="card">Útil para sistemas antiguos.</div>
+
+</section>
+
+<section>
+
+<h2>Desventajas</h2>
+
+<div class="card">Ejecución lenta.</div>
+
+<div class="card">Mayor consumo de recursos.</div>
+
+<div class="card">Menor eficiencia que otros métodos.</div>
+
+</section>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- TEMA 3 -->
+<!-- RECOMPILACIÓN DINÁMICA -->
+<!-- ========================= -->
+
+<section>
+
+<section class="sec-cover">
+
+<div class="num">1.1.b</div>
+
+<h2>
+Virtualización por Recompilación Dinámica
+</h2>
+
+<p>
+Traducción y optimización de bloques de instrucciones.
+</p>
+
+<div class="v-hint">
+<span class="arrow">↓</span>
+Descripción · Características · Casos de uso · Ejemplos
+</div>
+
+</section>
+
+<section>
+
+<h2>Descripción</h2>
+
+<div class="card">
+<p>
+La recompilación dinámica traduce bloques completos de instrucciones
+del sistema invitado y los optimiza para ejecutarlos más rápido en el
+sistema anfitrión.
+</p>
+</div>
+
+</section>
+
+<section>
+
+<h2>Características</h2>
+
+<div class="card">Mayor velocidad que la interpretación pura.</div>
+
+<div class="card">Traducción en tiempo real.</div>
+
+<div class="card">Optimización automática de instrucciones.</div>
+
+</section>
+
+<section>
+
+<h2>Casos de uso</h2>
+
+<div class="use-case">
+<div class="uc-title">🖥 Máquinas virtuales modernas</div>
+Mejora el rendimiento de sistemas virtualizados.
+</div>
+
+<div class="use-case">
+<div class="uc-title">🔄 Compatibilidad entre arquitecturas</div>
+Permite ejecutar software diseñado para otra plataforma.
+</div>
+
+</section>
+
+<section>
+
+<h2>Ejemplos</h2>
+
+<div class="card">QEMU con traducción dinámica.</div>
+
+<div class="card">Rosetta 2 de Apple.</div>
+
+</section>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- TEMA 4 -->
+<!-- HIPERVISIÓN BARE METAL -->
+<!-- ========================= -->
+
+<section>
+
+<section class="sec-cover">
+
+<div class="num">1.1.c</div>
+
+<h2>
+Virtualización por Hipervisión (Bare Metal)
+</h2>
+
+<p>
+Hipervisor instalado directamente sobre el hardware.
+</p>
+
+<div class="v-hint">
+<span class="arrow">↓</span>
+Descripción · Características · Casos de uso · Ejemplos
+</div>
+
+</section>
+
+<section>
+
+<h2>Descripción</h2>
+
+<div class="card">
+<p>
+El hipervisor se instala directamente sobre el hardware físico
+sin necesidad de un sistema operativo anfitrión.
+</p>
+</div>
+
+</section>
+
+<section>
+
+<h2>Características</h2>
+
+<div class="card">Alto rendimiento.</div>
+
+<div class="card">Mejor aprovechamiento de recursos.</div>
+
+<div class="card">Mayor seguridad.</div>
+
+<div class="card">Administración centralizada.</div>
+
+</section>
+
+<section>
+
+<h2>Casos de uso</h2>
+
+<div class="use-case">
+<div class="uc-title">🏢 Centros de datos</div>
+Administración eficiente de múltiples servidores.
+</div>
+
+<div class="use-case">
+<div class="uc-title">☁ Cloud Computing</div>
+Base de los servicios de nube modernos.
+</div>
+
+<div class="use-case">
+<div class="uc-title">🏭 Infraestructura empresarial</div>
+Virtualización de recursos corporativos.
+</div>
+
+</section>
+
+<section>
+
+<h2>Ejemplos</h2>
+
+<div class="card">VMware ESXi</div>
+
+<div class="card">Microsoft Hyper-V</div>
+
+<div class="card">Xen</div>
+
+</section>
+
+</section>
+
+<!-- ========================= -->
+<!-- COMPARACIÓN -->
+<!-- ========================= -->
+
+<section>
+
+<h2>Comparación de Tecnologías</h2>
+
+<table class="compare-table">
+
+<thead>
+<tr>
+<th>Tecnología</th>
+<th>Rendimiento</th>
+<th>Compatibilidad</th>
+<th>Uso Principal</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Interpretación Pura</td>
+<td>Bajo</td>
+<td>Muy Alta</td>
+<td>Emulación</td>
+</tr>
+
+<tr>
+<td>Recompilación Dinámica</td>
+<td>Medio-Alto</td>
+<td>Alta</td>
+<td>Compatibilidad</td>
+</tr>
+
+<tr>
+<td>Hipervisión Bare Metal</td>
+<td>Muy Alto</td>
+<td>Media</td>
+<td>Servidores y nube</td>
+</tr>
+</tbody>
+
+</table>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- CONCLUSIONES -->
+<!-- ========================= -->
+
+<section>
+
+<h2>Conclusion</h2>
+
+<div class="card">
+La virtualización permite optimizar el uso del hardware y mejorar la administración de recursos. Cada técnica tiene ventajas diferentes: la interpretación pura ofrece mayor compatibilidad, la recompilación dinámica mejora el rendimiento y los hipervisores Bare Metal son la mejor opción para entornos empresariales y servicios en la nube.
+</div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- GRACIAS -->
+<!-- ========================= -->
+
+<section class="cover">
+
+<div class="badge">
+TAREA #996
+</div>
+
+<h1>
+¡Gracias por su atención!
+</h1>
+
+</section>
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
+
+<script>
+Reveal.initialize({
+hash:true,
+slideNumber:true,
+controls:true,
+progress:true,
+center:false,
+transition:"slide"
+});
+</script>
+
+</body>
+</html>
